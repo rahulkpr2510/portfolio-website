@@ -7,9 +7,9 @@ export const DATA = {
   url: "",
   location: "New Delhi, India",
   description:
-    "AI/ML Enthusiast & Web Developer. Passionate about building innovative projects and exploring new technologies. Always learning and sharing insights.",
+    "Exploring AI/ML, Crafting the Web. Passionate about {Building&Learning}, Driven by {Innovation&Creativity}.",
   summary:
-    "I’m a B.Tech CSE (AI-ML) student passionate about web development and AI. I love building projects, exploring new technologies, and constantly learning. I’ve worked on exciting projects like StealthSpeak, participated in tech communities, and dived into AI/ML research. Currently, I’m exploring OpenCV and deep learning to bring sketches to life with AI.",
+    "A B.Tech CSE (AI-ML) student fueled by a passion for web development and artificial intelligence. I thrive on crafting cutting-edge solutions, engaging with tech communities, and delving into AI/ML research. Currently, I'm harnessing OpenCV and deep learning to translate raw sketches into intelligent, AI-powered interfaces—blending creativity with technology to shape the future.",
   avatarUrl: "/PICTURE.png",
   skills: [
     "HTML",
@@ -83,7 +83,7 @@ export const DATA = {
     {
       school: "Modern Public School, Delhi",
       href: "https://mpsshalimarbagh.com",
-      degree: "LKG to 12th",
+      degree: "Pre-Univeristy Education",
       logoUrl: "/Modern_Public_School_1488_Logo_1.png",
       start: "2009",
       end: "2023",
@@ -93,7 +93,7 @@ export const DATA = {
     {
       title: "Stealth Speak",
       href: "https://www.stealthspeak.xyz",
-      dates: "Feb 2024",
+      dates: "Feb 2025",
       active: true,
       description:
         "With the rise of privacy concerns in online communication, I built StealthSpeak—a secure and anonymous voice messaging platform. It enables users to share voice messages without revealing their identity, ensuring privacy while staying connected.",
