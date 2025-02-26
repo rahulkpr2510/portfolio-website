@@ -83,7 +83,7 @@ export const DATA = {
     {
       school: "Modern Public School, Delhi",
       href: "https://mpsshalimarbagh.com",
-      degree: "Pre-Univeristy Education",
+      degree: "Pre-University Education",
       logoUrl: "/Modern_Public_School_1488_Logo_1.png",
       start: "2009",
       end: "2023",
