@@ -7,28 +7,28 @@ export const DATA = {
   url: "",
   location: "New Delhi, India",
   description:
-    "Exploring AI/ML, Crafting the Web. Passionate about {Building&Learning}, Driven by {Innovation&Creativity}.",
+    "Passionate about {Building&Deploying} projects that make a difference",
   summary:
-    "A B.Tech CSE (AI-ML) student fueled by a passion for web development and artificial intelligence. I thrive on crafting cutting-edge solutions, engaging with tech communities, and delving into AI/ML research. Currently, I'm harnessing OpenCV and deep learning to translate raw sketches into intelligent, AI-powered interfaces—blending creativity with technology to shape the future.",
+    "I’m a passionate **Full Stack Developer** with a strong foundation in the **MERN stack**, cloud computing, and a growing interest in **AI** & **Machine Learning**. My journey into programming started with **C** and **Java**, but my curiosity led me to explore web development, backend systems, and AI-driven applications. Over time, I have honed my skills in **HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, Python**, and more, allowing me to build scalable, efficient, and user-friendly applications.\n\n\n Beyond coding, I love working on challenging projects that push my boundaries and contribute to real-world solutions. Whether it’s developing **full-stack applications, architecting APIs, or experimenting with AI**, I enjoy the process of building, iterating, and optimizing.",
   avatarUrl: "/PICTURE.png",
   skills: [
     "HTML",
     "CSS",
     "JavaScript",
+    "TypeScript",
     "React.js",
-    "Node.js",
-    "API Development",
     "Next.js",
-    "Typescript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
     "Python",
     "Java",
     "C",
-    "MySQL",
-    "MongoDB",
+    "Git",
+    "GitHub",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "rahulkpr1972@gamil.com",
     tel: "+91 9654741105",
@@ -54,6 +54,13 @@ export const DATA = {
 
         navbar: true,
       },
+      Email: {
+        name: "Email",
+        url: "mailto:rahulkpr1972@gmail.com",
+        icon: Icons.atSign,
+
+        navbar: true,
+      },
     },
   },
 
@@ -75,7 +82,8 @@ export const DATA = {
     {
       school: "KCC Institute of Technology and Management",
       href: "https://kccitm.edu.in",
-      degree: "Bachelor of Technology, Computer Science and Engineering (AI-ML)",
+      degree:
+        "Bachelor of Technology, Computer Science and Engineering (AI-ML)",
       logoUrl: "/fiqdo4xu.4kd.png",
       start: "2023",
       end: "2027",
@@ -104,13 +112,18 @@ export const DATA = {
         "Tailwind CSS",
         "Shadcn UI",
         "Google AI",
-        "Resend"
+        "Resend",
       ],
       links: [
         {
           type: "Website",
           href: "https://www.stealthspeak.xyz",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/rahulkapoor2005/stealth-speak",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/StealthSpeak.png",

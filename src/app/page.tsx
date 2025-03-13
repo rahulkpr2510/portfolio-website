@@ -8,7 +8,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
-const BLUR_FADE_DELAY = 0.1;
+const BLUR_FADE_DELAY = 0.2;
 
 export default function Page() {
   return (
