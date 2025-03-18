@@ -149,6 +149,12 @@ export const DATA = {
 
   Blogs: [
     {
+      title: "Docker Basic Commands for Beginners",
+      link: "https://getting-started-with-docker.hashnode.dev/getting-started-with-docker-basic-commands-for-beginners",
+      description: "A beginner-friendly guide to Docker basic commands",
+      date: "19/03/2025",
+    },
+    {
       title: "SSR vs. SSG in Next.js",
       link: "https://understanding-ssr-vs-ssg-in-nextjs.hashnode.dev/understanding-server-side-rendering-vs-static-site-generation-in-nextjs",
       description:
