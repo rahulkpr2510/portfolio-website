@@ -1,3 +1,4 @@
+import { BlogCard } from "@/components/blog-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -193,6 +194,38 @@ export default function Page() {
           </BlurFade>
         </div>
       </section> */}
+      <section id="education">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  My Blogs
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Read what I've been writing
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Whether it's breaking down complex topics or sharing small
+                  coding tricks, I enjoy putting my thoughts into words. Here’s
+                  a collection of my recent blogs.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          {DATA.Blogs.map((blog, id) => (
+            <BlurFade key={blog.title} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+              <BlogCard
+                key={Math.random()}
+                blogUrl={blog.link}
+                title={blog.title}
+                subtitle={blog.description}
+                date={blog.date}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>

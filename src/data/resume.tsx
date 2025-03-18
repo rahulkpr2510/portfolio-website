@@ -1,11 +1,13 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon } from "lucide-react";
+import { title } from "process";
 
 export const DATA = {
   name: "Rahul Kapoor",
   initials: "RK",
-  url: "",
+  url: "https://rahul-kapoor.vercel.app",
   location: "New Delhi, India",
+  locationLink: "https://www.google.com/maps/place/newdelhi",
   description:
     "Passionate about {Building&Deploying} projects that make a difference",
   summary:
@@ -14,6 +16,7 @@ export const DATA = {
   skills: [
     "HTML",
     "CSS",
+    "Tailwind CSS",
     "JavaScript",
     "TypeScript",
     "React.js",
@@ -27,6 +30,7 @@ export const DATA = {
     "C",
     "Git",
     "GitHub",
+    "Docker",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -141,5 +145,15 @@ export const DATA = {
   //     mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
   //     links: [],
   //   },
-  // ]
+  // ],
+
+  Blogs: [
+    {
+      title: "SSR vs. SSG in Next.js",
+      link: "https://understanding-ssr-vs-ssg-in-nextjs.hashnode.dev/understanding-server-side-rendering-vs-static-site-generation-in-nextjs",
+      description:
+        "Understanding Server Side Rendering vs Static Site Generation in Next.js",
+      date: "18/03/2025",
+    },
+  ],
 } as const;
