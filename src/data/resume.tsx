@@ -149,6 +149,12 @@ export const DATA = {
 
   Blogs: [
     {
+      title: "How Python Works Under the Hood",
+      link: "https://how-does-python-work-under-the-hood.hashnode.dev/how-python-works-under-the-hood-understanding-pycache-and-the-python-execution-process",
+      description: "Understanding __pycache__ and the Python execution process",
+      date: "23/03/2025",
+    },
+    {
       title: "Docker Basic Commands for Beginners",
       link: "https://getting-started-with-docker.hashnode.dev/getting-started-with-docker-basic-commands-for-beginners",
       description: "A beginner-friendly guide to Docker basic commands",
