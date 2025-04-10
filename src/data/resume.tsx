@@ -149,6 +149,18 @@ export const DATA = {
 
   Blogs: [
     {
+      title: "Mastering Prompt Styles",
+      link: "https://mastering-prompt-styles.hashnode.dev/mastering-prompt-styles-a-straightforward-guide-thatll-stick-with-you-forever",
+      description: "A straightforward guide that'll stick with you forever",
+      date: "10/4/2025",
+    },
+    {
+      title: "Decoding AI Jargons with Chai",
+      link: "https://decoding-the-jargons-of-ai-with-chai.hashnode.dev/decoding-ai-jargons-with-chai",
+      description: "A comprehensive guide to understanding AI jargons",
+      date: "08/04/2025",
+    },
+    {
       title: "How Python Works Under the Hood",
       link: "https://how-does-python-work-under-the-hood.hashnode.dev/how-python-works-under-the-hood-understanding-pycache-and-the-python-execution-process",
       description: "Understanding __pycache__ and the Python execution process",
