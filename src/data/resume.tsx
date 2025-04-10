@@ -152,7 +152,7 @@ export const DATA = {
       title: "Mastering Prompt Styles",
       link: "https://mastering-prompt-styles.hashnode.dev/mastering-prompt-styles-a-straightforward-guide-thatll-stick-with-you-forever",
       description: "A straightforward guide that'll stick with you forever",
-      date: "10/4/2025",
+      date: "10/04/2025",
     },
     {
       title: "Decoding AI Jargons with Chai",
