@@ -1,17 +1,16 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon } from "lucide-react";
-import { title } from "process";
 
 export const DATA = {
   name: "Rahul Kapoor",
   initials: "RK",
-  url: "https://rahul-kapoor.vercel.app",
+  url: "https://rahul-kapoor.in",
   location: "New Delhi, India",
   locationLink: "https://www.google.com/maps/place/newdelhi",
   description:
     "Passionate about {Building&Deploying} projects that make a difference",
   summary:
-    "I’m a passionate **Full Stack Developer** with a strong foundation in the **MERN stack**, cloud computing, and a growing interest in **AI** & **Machine Learning**. My journey into programming started with **C** and **Java**, but my curiosity led me to explore web development, backend systems, and AI-driven applications. Over time, I have honed my skills in **HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, Python**, and more, allowing me to build scalable, efficient, and user-friendly applications.\n\n\n Beyond coding, I love working on challenging projects that push my boundaries and contribute to real-world solutions. Whether it’s developing **full-stack applications, architecting APIs, or experimenting with AI**, I enjoy the process of building, iterating, and optimizing.",
+    "I'm a dedicated **Full Stack Developer** with expertise in the **MERN stack**, **cloud computing**, and a growing passion for **AI and Machine Learning**. My journey began with **C**, **C++**, and **Java**, eventually leading me to explore modern web development and backend systems.\n\n\n Skilled in **JavaScript**, **TypeScript**, **React**, **Next.js**, **Node.js**, **Express**, **MongoDB**, **MySQL**, **Python**, and more, I build scalable, user-focused applications. I thrive on challenging projects that blend creativity with real-world impact—whether it's crafting full-stack solutions, designing APIs, or diving into AI-driven tools.\n\n\n",
   avatarUrl: "/PICTURE.png",
   skills: [
     "HTML",
@@ -28,6 +27,7 @@ export const DATA = {
     "Python",
     "Java",
     "C",
+    "C++",
     "Git",
     "GitHub",
     "Docker",
@@ -39,7 +39,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/rahulkapoor2005",
+        url: "https://github.com/rahulkpr2510",
         icon: Icons.github,
 
         navbar: true,
