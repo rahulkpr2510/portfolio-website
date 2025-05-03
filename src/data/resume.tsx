@@ -149,6 +149,12 @@ export const DATA = {
 
   Blogs: [
     {
+      title: "Why Writing 100 Lines of Code Can Be Better Than Just 2",
+      link: "https://why-writing-100-lines-of-code-can-be-better-than-just-2.hashnode.dev/why-writing-100-lines-of-code-can-be-better-than-just-2-a-gentle-introduction-to-time-complexity",
+      description: "A Gentle Introduction to Time Complexity",
+      date: "04/05/2025",
+    },
+    {
       title: "Mastering Prompt Styles",
       link: "https://mastering-prompt-styles.hashnode.dev/mastering-prompt-styles-a-straightforward-guide-thatll-stick-with-you-forever",
       description: "A straightforward guide that'll stick with you forever",
