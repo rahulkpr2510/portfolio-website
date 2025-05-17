@@ -8,9 +8,9 @@ export const DATA = {
   location: "New Delhi, India",
   locationLink: "https://www.google.com/maps/place/newdelhi",
   description:
-    "Passionate about {Building&Deploying} projects that make a difference",
+    "Innovating Through Code — One Deployment at a Time",
   summary:
-    "I'm a dedicated **Full Stack Developer** with expertise in the **MERN stack**, **cloud computing**, and a growing passion for **AI and Machine Learning**. My journey began with **C**, **C++**, and **Java**, eventually leading me to explore modern web development and backend systems.\n\n\n Skilled in **JavaScript**, **TypeScript**, **React**, **Next.js**, **Node.js**, **Express**, **MongoDB**, **MySQL**, **Python**, and more, I build scalable, user-focused applications. I thrive on challenging projects that blend creativity with real-world impact—whether it's crafting full-stack solutions, designing APIs, or diving into AI-driven tools.\n\n\n",
+    "I'm a dedicated **Full Stack Developer** specializing in the **MERN stack**, with a strong foundation in cloud computing and an evolving passion for **AI and Machine Learning**. My journey began with core programming in **C**, **C++**, and **Java**, which laid the groundwork for my transition into modern web technologies and scalable backend systems.\n\n\n With hands-on experience in **JavaScript**, **TypeScript**, **React**, **Next.js**, **Node.js**, **Express**, **MongoDB**, **MySQL**, **Python**, and more — I focus on building performant, user-centric applications that solve real-world problems.\n\n\nWhether it's developing full-stack web platforms, architecting robust APIs, or experimenting with AI-driven solutions, I’m driven by the thrill of turning complex ideas into impactful digital products.",
   avatarUrl: "/PICTURE.png",
   skills: [
     "HTML",
@@ -23,14 +23,12 @@ export const DATA = {
     "Node.js",
     "Express.js",
     "MongoDB",
+    "NeonDB",
     "MySQL",
     "Python",
     "Java",
     "C",
     "C++",
-    "Git",
-    "GitHub",
-    "Docker",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -171,19 +169,6 @@ export const DATA = {
       link: "https://how-does-python-work-under-the-hood.hashnode.dev/how-python-works-under-the-hood-understanding-pycache-and-the-python-execution-process",
       description: "Understanding __pycache__ and the Python execution process",
       date: "23/03/2025",
-    },
-    {
-      title: "Docker Basic Commands for Beginners",
-      link: "https://getting-started-with-docker.hashnode.dev/getting-started-with-docker-basic-commands-for-beginners",
-      description: "A beginner-friendly guide to Docker basic commands",
-      date: "19/03/2025",
-    },
-    {
-      title: "SSR vs. SSG in Next.js",
-      link: "https://understanding-ssr-vs-ssg-in-nextjs.hashnode.dev/understanding-server-side-rendering-vs-static-site-generation-in-nextjs",
-      description:
-        "Understanding Server Side Rendering vs Static Site Generation in Next.js",
-      date: "18/03/2025",
     },
   ],
 } as const;
