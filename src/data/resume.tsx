@@ -56,6 +56,13 @@ export const DATA = {
 
         navbar: true,
       },
+      LeetCode: {
+        name: "X",
+        url: "https://leetcode.com/u/rahulkapoor2510",
+        icon: Icons.leetcode,
+
+        navbar: true,
+      },
       Email: {
         name: "Email",
         url: "mailto:rahulkpr1972@gmail.com",
