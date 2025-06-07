@@ -7,10 +7,14 @@ export const DATA = {
   url: "https://rahul-kapoor.in",
   location: "New Delhi, India",
   locationLink: "https://www.google.com/maps/place/newdelhi",
-  description:
-    "Innovating Through Code — One Deployment at a Time",
-  summary:
-    "I'm a dedicated **Full Stack Developer** specializing in the **MERN stack**, with a strong foundation in cloud computing and an evolving passion for **AI and Machine Learning**. My journey began with core programming in **C**, **C++**, and **Java**, which laid the groundwork for my transition into modern web technologies and scalable backend systems.\n\n\n With hands-on experience in **JavaScript**, **TypeScript**, **React**, **Next.js**, **Node.js**, **Express**, **MongoDB**, **MySQL**, **Python**, and more — I focus on building performant, user-centric applications that solve real-world problems.\n\n\nWhether it's developing full-stack web platforms, architecting robust APIs, or experimenting with AI-driven solutions, I’m driven by the thrill of turning complex ideas into impactful digital products.",
+  description: "Coding with Purpose. Building for Tomorrow.",
+  summary: `
+I'm Rahul Kapoor — a Full Stack Developer with a stronghold in the **MERN stack**, a growing enthusiasm for **AI/ML**, and a mindset tuned for impact-driven problem-solving.
+
+My journey started in foundational languages like **C**, **C++**, and **Java**, and matured into building scalable applications with modern stacks like **React**, **Next.js**, and **Node.js**. My curiosity has recently extended into cloud-native systems and intelligent automation using **Python**, **Google AI APIs**, and **TypeScript**.
+
+I believe in learning by doing. Whether it’s shipping privacy-first platforms, writing code that scales, or demystifying complex tech via blogs — I thrive in transforming raw ideas into production-ready products.
+  `.trim(),
   avatarUrl: "/PICTURE.png",
   skills: [
     "HTML",
@@ -91,8 +95,7 @@ export const DATA = {
     {
       school: "KCC Institute of Technology and Management",
       href: "https://kccitm.edu.in",
-      degree:
-        "Bachelor of Technology, Computer Science and Engineering (AI-ML)",
+      degree: "B.Tech, Computer Science (AI & ML)",
       logoUrl: "/fiqdo4xu.4kd.png",
       start: "2023",
       end: "2027",
@@ -100,7 +103,7 @@ export const DATA = {
     {
       school: "Modern Public School, Delhi",
       href: "https://mpsshalimarbagh.com",
-      degree: "Pre-University Education",
+      degree: "Senior Secondary (PCM + CS)",
       logoUrl: "/Modern_Public_School_1488_Logo_1.png",
       start: "2009",
       end: "2023",
@@ -112,8 +115,9 @@ export const DATA = {
       href: "https://www.stealthspeak.xyz",
       dates: "Feb 2025",
       active: true,
-      description:
-        "With the rise of privacy concerns in online communication, I built StealthSpeak—a secure and anonymous voice messaging platform. It enables users to share voice messages without revealing their identity, ensuring privacy while staying connected.",
+      description: `
+A privacy-first platform for anonymous voice messaging. Designed to empower users to speak freely without sacrificing identity or safety — Stealth Speak merges simplicity with security using a fully custom-built backend.
+      `.trim(),
       technologies: [
         "Next.js",
         "Typescript",
@@ -156,25 +160,29 @@ export const DATA = {
     {
       title: "Why Writing 100 Lines of Code Can Be Better Than Just 2",
       link: "https://why-writing-100-lines-of-code-can-be-better-than-just-2.hashnode.dev/why-writing-100-lines-of-code-can-be-better-than-just-2-a-gentle-introduction-to-time-complexity",
-      description: "A Gentle Introduction to Time Complexity",
+      description:
+        "Exploring the hidden tradeoffs behind time complexity and code verbosity",
       date: "04/05/2025",
     },
     {
       title: "Mastering Prompt Styles",
       link: "https://mastering-prompt-styles.hashnode.dev/mastering-prompt-styles-a-straightforward-guide-thatll-stick-with-you-forever",
-      description: "A straightforward guide that'll stick with you forever",
+      description:
+        "Crafting prompts that stick — a practical guide for LLM beginners",
       date: "10/04/2025",
     },
     {
       title: "Decoding AI Jargons with Chai",
       link: "https://decoding-the-jargons-of-ai-with-chai.hashnode.dev/decoding-ai-jargons-with-chai",
-      description: "A comprehensive guide to understanding AI jargons",
+      description:
+        "A conversational walkthrough of key AI concepts and buzzwords",
       date: "08/04/2025",
     },
     {
       title: "How Python Works Under the Hood",
       link: "https://how-does-python-work-under-the-hood.hashnode.dev/how-python-works-under-the-hood-understanding-pycache-and-the-python-execution-process",
-      description: "Understanding __pycache__ and the Python execution process",
+      description:
+        "An insider view into Python internals: from bytecode to __pycache__",
       date: "23/03/2025",
     },
   ],
