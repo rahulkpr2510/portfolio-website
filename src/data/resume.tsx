@@ -111,6 +111,37 @@ I believe in learning by doing. Whether it’s shipping privacy-first platforms,
   ],
   projects: [
     {
+      title: "MediSync - Doctor Appointment App",
+      href: "https://medisync.rahul-kapoor.in",
+      dates: "July 2025",
+      active: true,
+      description: `
+A seamless platform for booking doctor appointments. MediSync simplifies healthcare access with real-time doctor profiles, specialties, and availability — built with a secure, scalable backend to ensure both trust and convenience.
+      `.trim(),
+      technologies: [
+        "Next.js",
+        "JavaScript",
+        "NeonDB",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Clerk",
+        "Vonage",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://medisync.rahul-kapoor.in",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/rahulkpr2510/medisync",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/MediSync.png",
+    },
+    {
       title: "Stealth Speak",
       href: "https://www.stealthspeak.xyz",
       dates: "Feb 2025",
