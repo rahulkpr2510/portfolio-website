@@ -1,4 +1,5 @@
 import { BlogCard } from "@/components/blog-card";
+import { CertificationCard } from "@/components/certification-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -194,7 +195,41 @@ export default function Page() {
           </BlurFade>
         </div>
       </section> */}
-      <section id="education">
+      <section id="certifications">
+        <div className="flex min-h-0 flex-col gap-y-4">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2 mb-6">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  My Certifications
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Stamped Skills, Earned Through Learning
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  As I explore new technologies and deepen existing skills, I
+                  validate my learning through certifications.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          {DATA.Certifications.map((certification, id) => (
+            <BlurFade
+              key={certification.title}
+              delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+            >
+              <CertificationCard
+                key={Math.random()}
+                certificationUrl={certification.link}
+                title={certification.title}
+                date={certification.date}
+                description={certification.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      <section id="blogs">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">

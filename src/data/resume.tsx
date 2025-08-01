@@ -187,34 +187,48 @@ A privacy-first platform for anonymous voice messaging. Designed to empower user
   //   },
   // ],
 
+  Certifications: [
+    {
+      title: "Postman API Fundamentals Students Expert",
+      link: "https://api.badgr.io/public/assertions/CSW10caETc-5ZKNPzimH9w",
+      description: "Postman",
+      date: "August, 2025",
+    },
+    {
+      title: "Full Stack Developer Certification",
+      link: "https://oneroadmap.io/skills/fs/certificate/CERT-2218588C",
+      description: "United Latino Students Association (ULSA)",
+      date: "July, 2025",
+    },
+  ],
   Blogs: [
     {
       title: "Why Writing 100 Lines of Code Can Be Better Than Just 2",
       link: "https://why-writing-100-lines-of-code-can-be-better-than-just-2.hashnode.dev/why-writing-100-lines-of-code-can-be-better-than-just-2-a-gentle-introduction-to-time-complexity",
       description:
         "Exploring the hidden tradeoffs behind time complexity and code verbosity",
-      date: "04/05/2025",
+      date: "May, 2025",
     },
     {
       title: "Mastering Prompt Styles",
       link: "https://mastering-prompt-styles.hashnode.dev/mastering-prompt-styles-a-straightforward-guide-thatll-stick-with-you-forever",
       description:
         "Crafting prompts that stick — a practical guide for LLM beginners",
-      date: "10/04/2025",
+      date: "April, 2025",
     },
     {
       title: "Decoding AI Jargons with Chai",
       link: "https://decoding-the-jargons-of-ai-with-chai.hashnode.dev/decoding-ai-jargons-with-chai",
       description:
         "A conversational walkthrough of key AI concepts and buzzwords",
-      date: "08/04/2025",
+      date: "April, 2025",
     },
     {
       title: "How Python Works Under the Hood",
       link: "https://how-does-python-work-under-the-hood.hashnode.dev/how-python-works-under-the-hood-understanding-pycache-and-the-python-execution-process",
       description:
         "An insider view into Python internals: from bytecode to __pycache__",
-      date: "23/03/2025",
+      date: "March, 2025",
     },
   ],
 } as const;
