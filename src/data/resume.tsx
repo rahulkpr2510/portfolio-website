@@ -23,6 +23,7 @@ I believe in learning by doing. Whether it’s shipping privacy-first platforms,
     "JavaScript",
     "TypeScript",
     "React.js",
+    "React Native",
     "Next.js",
     "Node.js",
     "Express.js",
@@ -77,20 +78,20 @@ I believe in learning by doing. Whether it’s shipping privacy-first platforms,
     },
   },
 
-  // work: [
-  //   {
-  //     company: "Mitre Media",
-  //     href: "https://mitremedia.com/",
-  //     badges: [],
-  //     location: "Toronto, ON",
-  //     title: "Software Engineer",
-  //     logoUrl: "/mitremedia.png",
-  //     start: "May 2017",
-  //     end: "August 2017",
-  //     description:
-  //       "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
-  //   },
-  // ],
+  work: [
+    {
+      company: "GirlScript Summer of Code",
+      href: "https://ggsoc.girlscript.tech/",
+      badges: [],
+      location: "New Delhi, India",
+      title: "Contributor",
+      logoUrl: "/GGSoc.png",
+      start: "August 2025",
+      end: "Present",
+      description:
+        "Selected as a contributor for GGSOC 2025. Actively contributing to open-source projects focused on web and mobile development using MERN stack, React Native, and other technologies. Collaborating with maintainers and fellow contributors while enhancing real-world software skills.",
+    },
+  ],
   education: [
     {
       school: "KCC Institute of Technology and Management",
@@ -189,6 +190,12 @@ A privacy-first platform for anonymous voice messaging. Designed to empower user
 
   Certifications: [
     {
+      title: "Accenture Nordics - Software Engineering Job Simulation",
+      link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_cokPGdi2iT2GxN4ku_1754582676686_completion_certificate.pdf",
+      description: "Accenture",
+      date: "August, 2025",
+    },
+    {
       title: "Postman API Fundamentals Students Expert",
       link: "https://api.badgr.io/public/assertions/CSW10caETc-5ZKNPzimH9w",
       description: "Postman",
@@ -197,7 +204,7 @@ A privacy-first platform for anonymous voice messaging. Designed to empower user
     {
       title: "Full Stack Developer Certification",
       link: "https://oneroadmap.io/skills/fs/certificate/CERT-2218588C",
-      description: "United Latino Students Association (ULSA)",
+      description: "OneRoadmap.io",
       date: "July, 2025",
     },
   ],

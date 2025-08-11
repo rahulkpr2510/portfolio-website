@@ -2,7 +2,7 @@
 
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -51,27 +51,24 @@ export const BlogCard = ({
             </div>
           </div>
         </CardHeader>
-        <AnimatePresence initial={false}>
-          {isExpanded && description && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: isExpanded ? 1 : 0,
-                height: isExpanded ? "auto" : 0,
-              }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-2 font-sans text-xs"
-            >
-              <Link href={blogUrl} className="inline cursor-pointer">
-                {description}
-              </Link>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {description && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{
+              opacity: isExpanded ? 1 : 0,
+              height: isExpanded ? "auto" : 0,
+            }}
+            transition={{
+              duration: 0.7,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            className="mt-2 text-xs sm:text-sm"
+          >
+            <Link href={blogUrl} className="inline cursor-pointer">
+              {description}
+            </Link>
+          </motion.div>
+        )}
       </div>
     </Card>
   );
