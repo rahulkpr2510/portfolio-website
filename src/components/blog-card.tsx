@@ -62,7 +62,7 @@ export const BlogCard = ({
               duration: 0.7,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="mt-2 text-xs sm:text-sm"
+            className="mt-2 text-xs sm:text-sm text-muted-foreground"
           >
             <Link href={blogUrl} className="inline cursor-pointer">
               {description}
