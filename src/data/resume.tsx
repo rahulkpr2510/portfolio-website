@@ -99,7 +99,7 @@ I believe in learning by doing. Whether it’s shipping privacy-first platforms,
       degree: "B.Tech, Computer Science (AI & ML)",
       logoUrl: "/fiqdo4xu.4kd.png",
       start: "2023",
-      end: "2027",
+      end: "Present",
     },
     {
       school: "Modern Public School, Delhi",
@@ -167,7 +167,7 @@ A privacy-first platform for anonymous voice messaging. Designed to empower user
         },
         {
           type: "GitHub",
-          href: "https://github.com/rahulkapoor2005/stealth-speak",
+          href: "https://github.com/rahulkpr2510/stealth-speak",
           icon: <Icons.github className="size-3" />,
         },
       ],
