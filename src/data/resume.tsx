@@ -144,7 +144,7 @@ A seamless platform for booking doctor appointments. MediSync simplifies healthc
     },
     {
       title: "Stealth Speak",
-      href: "https://www.stealthspeak.xyz",
+      href: "https://stealthspeak.rahul-kapoor.in/",
       dates: "Feb 2025",
       active: true,
       description: `
