@@ -56,7 +56,7 @@ I believe in learning by doing. Whether it’s shipping privacy-first platforms,
       },
       X: {
         name: "X",
-        url: "https://x.com/rahulkpr2510",
+        url: "https://x.com/rahulkapoor2510",
         icon: Icons.x,
 
         navbar: true,
