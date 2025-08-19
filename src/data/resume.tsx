@@ -112,6 +112,37 @@ I believe in learning by doing. Whether it’s shipping privacy-first platforms,
   ],
   projects: [
     {
+      title: "Mentora - AI Career Coach",
+      href: "https://mentora.rahul-kapoor.in",
+      dates: "August 2025",
+      active: true,
+      description: `
+Mentora is an AI-powered career coaching platform that delivers personalized guidance, real-time industry insights, and smart tools like resume builders and interview prep — built on a modern, scalable stack for a seamless user experience.
+      `.trim(),
+      technologies: [
+        "Next.js",
+        "JavaScript",
+        "NeonDB",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Clerk",
+        "Inngest",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://mentora.rahul-kapoor.in",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/rahulkpr2510/mentora",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/Mentora.png",
+    },
+    {
       title: "MediSync - Doctor Appointment App",
       href: "https://medisync.rahul-kapoor.in",
       dates: "July 2025",
@@ -189,6 +220,13 @@ A privacy-first platform for anonymous voice messaging. Designed to empower user
   // ],
 
   Certifications: [
+    {
+      title:
+        "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=068C64A535941359CB5E8831382CC3E328527C5651FC6C3427026F7690436227",
+      description: "Oracle",
+      date: "August, 2025",
+    },
     {
       title: "Accenture Nordics - Software Engineering Job Simulation",
       link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_cokPGdi2iT2GxN4ku_1754582676686_completion_certificate.pdf",
