@@ -248,6 +248,12 @@ A privacy-first platform for anonymous voice messaging. Designed to empower user
   ],
   Blogs: [
     {
+      title: "Retrieval-Augmented Generation (RAG)",
+      link: "https://retrieval-augmented-generation-advance-techniques.hashnode.dev/retrieval-augmented-generation-rag-advanced-techniques-to-optimize-query-understanding",
+      description: "Advanced Techniques to Optimize Query Understanding",
+      date: "August, 2025",
+    },
+    {
       title: "Why Writing 100 Lines of Code Can Be Better Than Just 2",
       link: "https://why-writing-100-lines-of-code-can-be-better-than-just-2.hashnode.dev/why-writing-100-lines-of-code-can-be-better-than-just-2-a-gentle-introduction-to-time-complexity",
       description:
