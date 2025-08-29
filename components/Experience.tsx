@@ -38,14 +38,6 @@ export function Experience() {
               <p className="text-sm text-gray-300 mt-2 leading-relaxed">
                 {exp.description}
               </p>
-
-              {exp.projects?.length ? (
-                <ul className="mt-3 text-sm list-disc pl-5 space-y-1 text-gray-300">
-                  {exp.projects.map((p, i) => (
-                    <li key={i}>{p}</li>
-                  ))}
-                </ul>
-              ) : null}
             </div>
           </motion.div>
         ))}
