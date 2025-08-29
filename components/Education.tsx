@@ -45,19 +45,6 @@ export function Education() {
                 <p className="text-sm text-gray-400 mt-2 leading-relaxed">
                   {ed.description}
                 </p>
-
-                {ed.projects?.length ? (
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {ed.projects.map((p, i) => (
-                      <span
-                        key={i}
-                        className="text-xs px-2 py-1 rounded-full bg-gray-800 text-gray-200 border border-gray-700"
-                      >
-                        {p}
-                      </span>
-                    ))}
-                  </div>
-                ) : null}
               </div>
             </div>
           </motion.div>
