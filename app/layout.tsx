@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   keywords: site.seo.keywords,
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/app/favicon.ico" },
 };
 
 export default function RootLayout({
