@@ -1,8 +1,8 @@
 "use client";
 
-import { Section } from "./Section";
-import { site } from "@/content/site";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { site } from "@/content/site";
 
 type Cert = {
   name: string;
@@ -24,20 +24,26 @@ const card = {
   visible: { opacity: 1, y: 0 },
 };
 
-function ProfessionalCard({ c }: { c: Cert }) {
+function CertificationCard({ c }: { c: Cert }) {
   return (
     <motion.article
       variants={card}
-      whileHover={{ y: -3, scale: 1.02 }}
-      className="group relative rounded-xl border border-gray-700 bg-black p-5 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full"
+      whileHover={{
+        y: -4,
+        scale: 1.02,
+        boxShadow: "0 12px 24px rgba(6,182,212,0.15)",
+      }}
+      className="group relative flex flex-col rounded-2xl border border-white/10 
+                 bg-gradient-to-r from-white/5 to-white/10 p-5 shadow-md backdrop-blur-md 
+                 transition-all duration-200 h-full"
       tabIndex={0}
       aria-label={`${c.name} issued by ${c.issuer}`}
     >
-      <header className="flex items-center gap-3 mb-2">
+      <header className="flex items-center gap-3 mb-3">
         {c.badgeUrl && (
           <img
             src={c.badgeUrl}
-            alt=""
+            alt={`${c.name} badge`}
             className="h-10 w-10 object-contain rounded-md"
             loading="lazy"
           />
@@ -57,7 +63,7 @@ function ProfessionalCard({ c }: { c: Cert }) {
           {c.skills.slice(0, 6).map((s, i) => (
             <span
               key={i}
-              className="text-xs bg-black text-gray-200 px-2 py-1 rounded-full"
+              className="text-xs bg-black/50 text-gray-200 px-2 py-1 rounded-full"
             >
               {s}
             </span>
@@ -72,7 +78,7 @@ function ProfessionalCard({ c }: { c: Cert }) {
             href={c.url}
             target="_blank"
             rel="noreferrer"
-            className="text-cyan-400 hover:text-cyan-300 font-medium"
+            className="text-fuchsia-400 hover:text-fuchsia-300 font-medium transition-colors"
           >
             View →
           </a>
@@ -82,15 +88,31 @@ function ProfessionalCard({ c }: { c: Cert }) {
   );
 }
 
-export function Certifications() {
+export default function Certifications() {
   const items: Cert[] = (site.certifications as any[]) || [];
 
   return (
-    <Section
+    <section
       id="certifications"
-      title="Certifications"
-      description="Professional accomplishments and credentials."
+      className="max-w-6xl mx-auto px-6 py-20 space-y-8"
     >
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center space-y-3"
+      >
+        <h2 className="text-6xl font-extrabold text-white tracking-tighter">
+          Certifications
+        </h2>
+        <div className="mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-white to-fuchsia-500" />
+        <p className="text-zinc-400 max-w-lg mx-auto text-base">
+          Professional accomplishments and credentials I’ve earned over time.
+        </p>
+      </motion.div>
+
+      {/* Cards */}
       <AnimatePresence initial={false}>
         <motion.div
           variants={container}
@@ -100,10 +122,10 @@ export function Certifications() {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {items.map((c, idx) => (
-            <ProfessionalCard key={idx} c={c} />
+            <CertificationCard key={idx} c={c} />
           ))}
         </motion.div>
       </AnimatePresence>
-    </Section>
+    </section>
   );
 }
