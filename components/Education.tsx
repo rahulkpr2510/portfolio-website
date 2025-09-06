@@ -1,55 +1,74 @@
 "use client";
-import { Section } from "./Section";
-import { site } from "@/content/site";
+import React from "react";
 import { motion } from "framer-motion";
+import { Calendar, GraduationCap } from "lucide-react";
+import { site } from "@/content/site";
 
-export function Education() {
+export default function Education() {
   return (
-    <Section
-      id="education"
-      title="Education"
-      description="Institutes, courses, and key highlights."
-      variant="minimal"
-    >
-      <div className="flex flex-col gap-6">
+    <section id="education" className="max-w-6xl mx-auto px-6 py-20 space-y-16">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center space-y-6"
+      >
+        <h2 className="text-6xl font-extrabold text-white tracking-tighter">
+          Education
+        </h2>
+        <div className="mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-white to-fuchsia-500" />
+        <p className="text-zinc-400 max-w-lg mx-auto text-base">
+          Institutes, courses, and key highlights that shaped my journey.
+        </p>
+      </motion.div>
+
+      {/* Timeline */}
+      <div className="relative border-l border-fuchsia-500/30 pl-6 space-y-12">
         {site.education.map((ed, idx) => (
           <motion.div
             key={idx}
-            whileHover={{ y: -3, scale: 1.01 }}
-            transition={{ type: "spring", stiffness: 150, damping: 18 }}
-            className="relative flex flex-col p-6 rounded-2xl border border-gray-700 bg-black shadow-md"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: idx * 0.1 }}
+            className="relative group"
           >
-            {/* Top accent line */}
-            <div className="absolute top-0 left-6 w-14 h-1 rounded-full bg-gray-600" />
+            {/* Node icon */}
+            <span
+              className="absolute -left-[40px] top-2 flex h-8 w-8 items-center 
+              justify-center rounded-full border border-fuchsia-400/30 
+              bg-black/80 text-fuchsia-400 group-hover:scale-110 
+              transition-transform duration-300"
+            >
+              <GraduationCap size={16} />
+            </span>
 
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 relative z-10">
-              {/* Optional logo */}
-              {/* {ed.logoUrl && (
-                <img
-                  src={ed.logoUrl}
-                  alt={`${ed.institute} logo`}
-                  className="h-10 w-10 rounded-md object-contain grayscale"
-                />
-              )} */}
-
-              <div className="flex-1">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-                  <h3 className="text-lg font-semibold text-white">
-                    {ed.institute}
-                  </h3>
-                  <span className="text-xs text-gray-400">{ed.period}</span>
-                </div>
-                <p className="text-sm text-gray-300 font-medium mt-1">
-                  {ed.course}
-                </p>
-                <p className="text-sm text-gray-400 mt-2 leading-relaxed">
-                  {ed.description}
-                </p>
+            {/* Card */}
+            <div
+              className="rounded-2xl border border-white/10 bg-gradient-to-r 
+              from-white/5 to-white/10 p-6 backdrop-blur-md shadow-md 
+              hover:border-fuchsia-400/30 transition"
+            >
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+                <h3 className="text-lg font-semibold text-white">
+                  {ed.institute}
+                </h3>
+                <span className="flex items-center gap-1 text-xs text-gray-400">
+                  <Calendar size={14} />
+                  {ed.period}
+                </span>
               </div>
+
+              <p className="text-sm text-fuchsia-200 font-medium mt-1">
+                {ed.course}
+              </p>
+              <p className="text-sm text-gray-300 mt-2 leading-relaxed">
+                {ed.description}
+              </p>
             </div>
           </motion.div>
         ))}
       </div>
-    </Section>
+    </section>
   );
 }
