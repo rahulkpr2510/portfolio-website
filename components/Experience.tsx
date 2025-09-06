@@ -1,47 +1,73 @@
 "use client";
-import { Section } from "./Section";
-import { site } from "@/content/site";
+import React from "react";
 import { motion } from "framer-motion";
+import { Briefcase, Calendar, Code } from "lucide-react";
+import { site } from "@/content/site";
 
-export function Experience() {
+export default function Experience() {
   return (
-    <Section
+    <section
       id="experience"
-      title="Experience"
-      description="Roles, timelines, and highlight projects."
+      className="max-w-6xl mx-auto px-6 py-20 space-y-20"
     >
-      <div className="relative flex flex-col gap-8">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center space-y-6"
+      >
+        <h2 className="text-6xl font-extrabold text-white tracking-tighter">
+          My Journey
+        </h2>
+        <div className="mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-white to-fuchsia-500" />
+        <p className="text-zinc-400 max-w-lg mx-auto text-base">
+          A quick look at the roles and projects that shaped me as a developer.
+        </p>
+      </motion.div>
+
+      {/* Timeline */}
+      <div className="relative border-l border-fuchsia-500/30 pl-6 space-y-12">
         {site.experience.map((exp, idx) => (
           <motion.div
             key={idx}
-            whileHover={{
-              y: -4,
-              boxShadow: "0 12px 24px rgba(6,182,212,0.15)",
-            }}
-            transition={{ type: "spring", stiffness: 180, damping: 20 }}
-            className="relative flex flex-col sm:flex-row sm:items-start gap-4 p-6 rounded-2xl border border-cyan-400/20 bg-black backdrop-blur-md shadow-md"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: idx * 0.1 }}
+            className="relative group"
           >
-            {/* Timeline accent */}
-            <div className="absolute left-3 top-0 bottom-0 w-1 rounded-full bg-cyan-400/50 sm:left-6" />
+            {/* Node icon */}
+            <span
+              className="absolute -left-[40px] top-2 flex h-8 w-8 items-center 
+              justify-center rounded-full border border-fuchsia-600/30 
+              bg-black/80 text-fuchsia-500 group-hover:scale-110 
+              transition-transform duration-300"
+            >
+              <Briefcase size={16} />
+            </span>
 
-            <div className="flex-1 sm:pl-6 relative z-10">
-              <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1">
+            {/* Card */}
+            <div
+              className="rounded-2xl border border-white/10 bg-gradient-to-r 
+              from-white/5 to-white/10 p-6 backdrop-blur-md shadow-md 
+              hover:border-fuchsia-400/30 transition"
+            >
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
                 <h3 className="text-lg font-semibold text-white">
-                  {exp.company}
+                  {exp.role} @ {exp.company}
                 </h3>
-                <span className="text-xs text-gray-400">{exp.period}</span>
+                <span className="flex items-center gap-1 text-xs text-gray-400">
+                  <Calendar size={14} />
+                  {exp.period}
+                </span>
               </div>
 
-              <p className="text-sm text-cyan-200 mt-1 font-medium">
-                {exp.role}
-              </p>
-              <p className="text-sm text-gray-300 mt-2 leading-relaxed">
+              <p className="text-sm text-gray-300 mt-3 leading-relaxed">
                 {exp.description}
               </p>
             </div>
           </motion.div>
         ))}
       </div>
-    </Section>
+    </section>
   );
 }
