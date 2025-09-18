@@ -27,43 +27,50 @@ const socialLinks = [
 export default function Contact() {
   const [status, setStatus] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [hasError, setHasError] = useState(false);
-  const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
     setStatus(null);
-    setHasError(false);
 
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+
     const payload = {
-      name: fd.get("name"),
-      email: fd.get("email"),
-      message: fd.get("message"),
+      name: fd.get("name")?.toString() || undefined,
+      email: fd.get("email")?.toString() || "",
+      projectIdea: fd.get("projectIdea")?.toString() || "",
+      description: fd.get("description")?.toString() || "",
     };
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
-        body: JSON.stringify(payload),
         headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
-      if (res.ok) {
-        setStatus("Message sent! I'll reply soon 🎉");
-        if (formRef.current) formRef.current.reset();
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok && data.success) {
+        setStatus("✅ Message sent — I’ll reply soon.");
+        form.reset();
+      } else if (data.details) {
+        // Show validation errors from Zod
+        const messages = Object.entries(data.details)
+          .map(([field, errs]) => `${field}: ${errs}`)
+          .join("\n");
+        setStatus(`⚠️ Validation errors:\n${messages}`);
       } else {
-        setStatus("Something went wrong, try again.");
-        setHasError(true);
+        setStatus(data.error || "⚠️ Failed to send. Try again later.");
       }
     } catch (err) {
-      setStatus("Network error. Please try again.");
-      setHasError(true);
+      console.error("Network error:", err);
+      setStatus("🌐 Network error. Try again.");
     } finally {
       setLoading(false);
     }
-  };
+  }
 
   return (
     <section id="contact" className="max-w-6xl mx-auto px-6 py-24 space-y-16">
@@ -98,13 +105,13 @@ export default function Contact() {
           </p>
 
           <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
-            {["name", "email", "company"].map((field) => (
+            {["name", "email", "projectIdea"].map((field) => (
               <input
                 key={field}
                 name={field}
                 type={field === "email" ? "email" : "text"}
                 placeholder={
-                  field === "company" ? "Project Idea" : `Your ${field}`
+                  field === "projectIdea" ? "Project Idea" : `Your ${field}`
                 }
                 className="w-full rounded-md px-3 py-2 bg-zinc-900 border border-zinc-800 text-sm text-zinc-200 placeholder-zinc-500 
                            focus:border-fuchsia-400 focus:ring-1 focus:ring-fuchsia-500 transition-all"
@@ -112,7 +119,7 @@ export default function Contact() {
             ))}
 
             <textarea
-              name="message"
+              name="description"
               rows={5}
               placeholder="Briefly describe what you want to build."
               className="w-full rounded-md px-3 py-2 bg-zinc-900 border border-zinc-800 text-sm text-zinc-200 placeholder-zinc-500 
